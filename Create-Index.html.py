@@ -1,8 +1,9 @@
-# Creating the HTML file
-f = open("\var\www\html\index.html", "w")
+from pathlib import Path
+file = Path("/var/www/html/index.html")
+file.parent.mkdir(parents=True, exist_ok=True)
+file = open("/var/www/html/index.html", "w")
 # Adding the input data to the HTML file
-f.write('''
-<html>
+file.write('''<html>
 <head>
 <title>HTML File</title>
 </head> 
@@ -12,4 +13,4 @@ f.write('''
 </body>
 </html>''')
 # Saving the data into the HTML file
-f.close()
+file.close()
