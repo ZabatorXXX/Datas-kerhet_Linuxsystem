@@ -1,5 +1,5 @@
 # Creating the HTML file
-f = open("\\var\www\html\index.html", "w")
+f = open("\var\www\html\index.html", "w")
 # Adding the input data to the HTML file
 f.write('''
 <html>
