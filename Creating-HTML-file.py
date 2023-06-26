@@ -1,5 +1,5 @@
 # Creating the HTML file
-file_html = open("index.html", "w")
+file_html = open("/var/www/html/index.html", "w")
 # Adding the input data to the HTML file
 file_html.write('''<html>
 <head>
@@ -11,4 +11,4 @@ file_html.write('''<html>
 </body>
 </html>''')
 # Saving the data into the HTML file
-file_html.close("/var/www/html/")
+file_html.close()
